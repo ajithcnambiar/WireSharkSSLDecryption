@@ -34,7 +34,7 @@ curl -k 'https://localhost:444'
 
 4. Open /tmp/tcpdump_logs in wireshark
 
-5. Filter out the required packets:
+5. Filter out the required packets and set key to Wireshark.
     * *ssl.handshake.type == 1* to filter out *Client Hello*.
     * Retrieve the TCP conversation history by Right click *Client Hello* packet -> *Conversation Filter* -> *TCP*
     * From the *Server Hello* packet, check the *Cipher Suite*. It shouldn't be based on "Diffie Hellman". With this setup, I have noted *Cipher Suite* to be: *TLS_RSA_WITH_AES_256_GCM_SHA384 (0x009d)*
@@ -47,4 +47,6 @@ curl -k 'https://localhost:444'
     Protocol: http
     Key File: /path/to/localhost.key
     ```
+
+6. Wireshark packets will be refreshed with decrypted information in the packets.
 

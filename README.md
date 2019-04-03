@@ -1,10 +1,12 @@
-## How to use
+# SSL Decryption with Wireshake using RSA Key
+
+## Create HTTPS Nginx Server in the local
 
 The below script builds nginx image with SSL enabled and listens at port 444
 ```
 bash -x build.sh
 ```
-* **Note**: Please provide details when prompted to create self signed certificate. Type enter character to take default. *localhost.key* and *localhost.crt* are created as part of self signed certificate and key generation. These artifacts are used to set up local https server.
+* **Note:** Please provide details when prompted to create self signed certificate. Type enter character to take default. *localhost.key* and *localhost.crt* are created as part of self signed certificate and key generation. These artifacts are used to set up local https server.
 
 To test the server
 
@@ -14,7 +16,7 @@ curl -k 'https://localhost:444'
 
 ssl_ciphers is purposefully setup to weak so that SSL decryption with wireshark can be tested.
 
-## Steps to test Wireshark HTTPS Decryption using RSA Key
+## Steps to decrypt HTTPS using Wireshark
 
 1. Capture network logs using tcpdump
 

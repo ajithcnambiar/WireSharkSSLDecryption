@@ -1,0 +1,6 @@
+version: '3'
+services:
+  test_local_https:
+    image: "test-local-https:v1"
+    ports:
+      - "444:443"

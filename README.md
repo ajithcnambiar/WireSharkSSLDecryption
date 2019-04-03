@@ -11,7 +11,7 @@ To test the server
 curl -k 'https://localhost:444' 
 ```
 
-ssl_ciphers is purposfully setup to weak so that SSL decryption with wireshark can be tested.
+ssl_ciphers is purposefully setup to weak so that SSL decryption with wireshark can be tested.
 
 ## Steps to test Wireshark HTTPS Decryption using RSA Key
 

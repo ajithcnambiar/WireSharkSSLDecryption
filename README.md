@@ -48,5 +48,5 @@ curl -k 'https://localhost:444'
     Key File: /path/to/localhost.key
     ```
 
-6. Wireshark packets will be refreshed with decrypted information in the packets.
+6. Wireshark will be refreshed with decrypted information in the packets.
 

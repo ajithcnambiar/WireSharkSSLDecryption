@@ -1,4 +1,4 @@
-# SSL Decryption with Wireshake using RSA Key
+# SSL Decryption with Wireshark using RSA Key
 
 ## Create HTTPS Nginx Server in the local
 
